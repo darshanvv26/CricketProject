@@ -1,0 +1,28 @@
+battingdic = {
+    'runs_to_Lspin' : 304,
+    'runs_to_Rspin' : 656,
+    'runs_to_Rpace' : 1450,
+    'runs_to_Lpace' : 534,
+    'out_to_Lspin'  : 11,
+    'out_to_Rspin'  : 27,
+    'out_to_Rpace'  : 59,
+    'out_to_Lpace'  : 16,
+    'balls_Lspin'   : 254,
+    'balls_Rspin'   : 565,
+    'balls_Rpace'   : 1142,
+    'balls_Lpace'   : 378,
+    'pos' : 'top',
+    'inng' : 377,
+    'best' : 115
+}
+
+bowlingdic = {
+    'runs_to_right'   : NULL,
+    'runs_to_left'    : NULL,
+    'wickets_to_right': NULL,
+    'wickets_to_left' : NULL,
+    'balls_to_right'  : NULL,
+    'balls_to_left'   : NULL,
+    'inngs'           : NULL,
+    'best'            : NULL,
+    'pos'             : NULL

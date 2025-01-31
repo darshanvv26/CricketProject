@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - Player Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .player-details {
+            margin-bottom: 20px;
+        }
+
+        .player-details p {
+            margin: 5px 0;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .stats-container .stats {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .stats-container .stats h2 {
+            color: #007bff;
+            margin-top: 0;
+        }
+
+        .stats-container .stats p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ paras[0] }}</h1> <!-- Player Name -->
+    
+        <div class="player-details">
+            <h2>Player Details</h2>
+            <p><strong>Batting Hand:</strong> {{ paras[1] }}</p> <!-- Batting Hand -->
+            <p><strong>Bowling Type:</strong> {{ paras[2] }}</p> <!-- Bowling Type -->
+            <p><strong>Role:</strong> {{ paras[3] }}</p> <!-- Role -->
+            <p><strong>Team:</strong> {{ paras[4] }}</p> <!-- Team Name -->
+        </div>
+    
+        <div class="stats-container">
+            <div class="stats">
+                <h2>Batting Statistics</h2>
+                <p><strong>Innings:</strong> {{ paras[5] }}</p> <!-- Number of Innings -->
+                <p><strong>Runs:</strong> {{ paras[6] }}</p> <!-- Total Runs Scored -->
+                <p><strong>Strike Rate:</strong> {{ paras[7] }}</p> <!-- Strike Rate -->
+                <p><strong>Average:</strong> {{ paras[8] }}</p> <!-- Batting Average -->
+            </div>
+    
+            <div class="stats">
+                <h2>Bowling Statistics</h2>
+                <p><strong>Innings:</strong> {{ paras[9] }}</p> <!-- Number of Bowling Innings -->
+                <p><strong>Wickets:</strong> {{ paras[11] }}</p> <!-- Total Wickets Taken -->
+                <p><strong>Runs Conceded:</strong> {{ paras[10] }}</p> <!-- Total Runs Conceded -->
+                <p><strong>Economy Rate:</strong> {{ paras[12] }}</p> <!-- Bowling Economy Rate -->
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

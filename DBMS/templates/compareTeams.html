@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Players Stats</title>
+    <style>
+        body {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-box-shadow: inset 0px 0px 400px #000000;
+            box-shadow: inset 0px 0px 400px #000000;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.35)), url('{{ url_for("static", filename="indexBG.jpg") }}');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        div {
+            text-align: center;
+            padding: 20px;
+            margin: 50px auto;
+            max-width: 600px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-decoration: underline;
+            color: #3498db;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 15px;
+            display: block;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="text"] {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .input {
+            border: none;
+            padding: 1rem;
+            border-radius: 1rem;
+            background: #e8e8e8;
+            box-shadow: 20px 20px 60px #c5c5c5,
+                -20px -20px 60px #ffffff;
+            transition: 0.3s;
+        }
+
+        .input:focus {
+            outline-color: #e8e8e8;
+            background: #e8e8e8;
+            box-shadow: inset 20px 20px 60px #c5c5c5,
+                inset -20px -20px 60px #ffffff;
+            transition: 0.3s;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2><u>Here you can compare Teams</u></h2><br>
+        <hr>
+
+        <form action="{{ url_for('compare_team') }}" method="post">
+            <label for="team1">
+                <b><u>Enter Team 1</u></b>
+                <br>
+                <input type="text" name="team1" id="team1" placeholder="Team Name" class="input">
+            </label><br>
+            <hr>
+            <label for="team2">
+                <b><u>Enter Team 2</u></b>
+                <br>
+                <input type="text" name="team2" id="team2" placeholder="Team Name" class="input">
+            </label>
+            <hr>
+            <input type="submit" value="Compare Teams">
+        </form>
+    </div>
+
+
+</body>
+
+</html>
